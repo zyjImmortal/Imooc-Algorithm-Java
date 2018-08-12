@@ -1,12 +1,10 @@
-package com.zhouyajun.SortingBasic.SelectionSort;
-
-import com.zhouyajun.SortingBasic.SortTestHelper;
+package com.zhouyajun.SortingBasic;
 
 /**
  * 选择排序：每次找出最小的元素放到数组的最前面
  * 缺点：两层循环全部都要执行一次，即使是近乎有序的数组
  */
-public class Solution {
+public class SelectionSort {
 
     private static void swap(int[] array, int first, int second) {
         int temp = array[first];
@@ -36,7 +34,7 @@ public class Solution {
 
     public static void main(String[] args) {
         int[] array = {2, 3, 1, 8, 5, 3, 9, 2, 0};
-        Solution.selectionSort(array);
+        SelectionSort.selectionSort(array);
         SortTestHelper.printArray(array);
     }
 }
